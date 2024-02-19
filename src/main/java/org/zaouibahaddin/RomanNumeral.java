@@ -26,7 +26,8 @@ public class RomanNumeral {
             int currentNumber = map.get(s.charAt(i));
             int next = i+1 < s.length() ? map.get(s.charAt(i+1)) : 0;
 
-            if(currentNumber > next)
+            if(currentNumber >= next)
+                // The error of the boundaries!!!
                 convertedNumber += currentNumber;
             else
                 convertedNumber -= currentNumber;

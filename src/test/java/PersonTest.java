@@ -1,11 +1,18 @@
 import jdk.jfr.Category;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.zaouibahaddin.Person;
 
 public class PersonTest {
+    private Person p1;
+    @BeforeEach
+    void setUp ()
+    {
+        p1 = new Person("Bahaa Eddine" , "ZAOUI", 22);
+    }
 
-    Person p1 = new Person("Bahaa Eddine" , "ZAOUI", 22);
+
     @Test
     public void returnsTheRightFullName() {
 

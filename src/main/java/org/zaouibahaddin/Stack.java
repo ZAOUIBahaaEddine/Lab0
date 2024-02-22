@@ -1,8 +1,8 @@
 package org.zaouibahaddin;
 
 public class Stack {
-    private int[] array;
-    private int top;
+    public int[] array;
+    public int top;
     private static final int INITIAL_CAPACITY = 10;
     public Stack() {
         array = new int[INITIAL_CAPACITY];
@@ -32,7 +32,7 @@ public class Stack {
     public int size() {
         return top + 1;
     }
-    private void expandArray() {
+    public void expandArray() {
         int[] newArray = new int[array.length * 2];
         System.arraycopy(array, 0, newArray, 0, array.length);
         array = newArray;

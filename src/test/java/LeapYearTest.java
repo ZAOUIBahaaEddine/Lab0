@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.zaouibahaddin.LeapYear;
-import org.zaouibahaddin.Person;
 
 
 public class LeapYearTest {

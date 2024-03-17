@@ -22,6 +22,16 @@ public class StackTest {
         stack.push(2016);
         assertEquals(2016, stack.peek());
     }
+
+    @Test
+    void push_whenStackIsFull_expandsArray() {
+        for (int i = 0; i < stack.array.length; i++) {
+            stack.push(i);
+        }
+        assertEquals(stack.array.length * 2, stack.top + 1);
+    }
+
+
     @Test
     public void popTest ()
     {
@@ -31,6 +41,24 @@ public class StackTest {
         stack.push (4);
         assertEquals(4, stack.pop());
     }
+
+    @Test
+    public void PopWithCheckingSizeTest() {
+        Stack stack = new Stack();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        int popped = stack.pop();
+
+        Assertions.assertEquals(3, popped);
+        Assertions.assertEquals(2, stack.size());
+        Assertions.assertFalse(stack.isEmpty());
+    }
+
+
+
+
     @Test
     public void peekTest ()
     {
@@ -40,10 +68,21 @@ public class StackTest {
         stack.push (4);
         assertEquals(4, stack.peek());
     }
+    
+
     @Test
-    public void isEmptyTest ()
-    {
-        Assertions.assertTrue(stack.isEmpty());
+    public void isEmpty_whenStackIsEmpty_thenReturnTrue() {
+        Stack stack = new Stack();
+        boolean isEmpty = stack.isEmpty();
+        Assertions.assertTrue(isEmpty);
+    }
+
+    @Test
+    public void isEmpty_whenStackIsNotEmpty_thenReturnFalse() {
+        Stack stack = new Stack();
+        stack.push(1);
+        boolean isEmpty = stack.isEmpty();
+        Assertions.assertFalse(isEmpty);
     }
 
     @Test

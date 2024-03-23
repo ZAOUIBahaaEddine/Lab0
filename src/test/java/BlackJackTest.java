@@ -34,6 +34,7 @@ public class BlackJackTest {
 
         Assertions.assertEquals(20, blackjack.play(20, 20));
         Assertions.assertEquals(15, blackjack.play(15, 15));
+        // There is no case where they both surpass 21 and be equal at the same time
     }
 
     @Test

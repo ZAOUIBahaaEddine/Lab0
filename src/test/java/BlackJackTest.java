@@ -50,5 +50,12 @@ public class BlackJackTest {
         Assertions.assertEquals(17, blackjack.play(17, 16));
     }
 
+    @Test
+    public void testOneWinsBecauseTheOtherSurpassed21() {
+        
+        Assertions.assertEquals(16, blackjack.play(16, 22));
+        Assertions.assertEquals(17, blackjack.play(17, 22));
+    }
+
 
 }

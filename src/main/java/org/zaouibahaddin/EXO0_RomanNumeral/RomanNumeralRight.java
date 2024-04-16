@@ -19,27 +19,8 @@ public class RomanNumeralRight {
         map.put('M', 1000);
     }
 
+
     public int convert(String s) {
-
-        int convertedNumber = 0;
-        for(int i = 0; i < s.length(); i++) {
-            int currentNumber = map.get(s.charAt(i));
-            int next = i+1 < s.length() ? map.get(s.charAt(i+1)) : 0;
-
-            if(currentNumber > next)
-                // The error of the boundaries!!!
-                // TODO: Correct this method by creating another method
-                convertedNumber += currentNumber;
-            else
-                convertedNumber -= currentNumber;
-        }
-
-        return convertedNumber;
-
-    }
-
-
-    public int convertModified(String s) {
 
         int convertedNumber = 0;
         for(int i = 0; i < s.length(); i++) {
@@ -54,10 +35,5 @@ public class RomanNumeralRight {
         }
 
         return convertedNumber;
-
     }
-
-
-
-
 }

@@ -4,7 +4,7 @@ package org.zaouibahaddin.EXO0_RomanNumeral;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RomanNumeral {
+public class RomanNumeralRight {
 
     private static final Map<Character, Integer> map;
 

@@ -1,7 +1,7 @@
 package org.zaouibahaddin.EXO0_LeapYear;
 
 
-public class LeapYear {
+public class LeapYearRight {
 
 
     public boolean isLeapYear(int year) {

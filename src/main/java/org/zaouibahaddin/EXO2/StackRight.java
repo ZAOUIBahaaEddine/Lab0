@@ -1,10 +1,10 @@
 package org.zaouibahaddin.EXO2;
 
-public class Stack {
+public class StackRight {
     public int[] array;
     public int top;
     private static final int INITIAL_CAPACITY = 10;
-    public Stack() {
+    public StackRight() {
         array = new int[INITIAL_CAPACITY];
         top = -1;
     }

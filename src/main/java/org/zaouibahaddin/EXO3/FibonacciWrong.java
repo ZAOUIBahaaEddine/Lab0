@@ -1,6 +1,6 @@
 package org.zaouibahaddin.EXO3;
 
-public class Fibonacci {
+public class FibonacciWrong {
     public int fibonacci(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("n must be positive");

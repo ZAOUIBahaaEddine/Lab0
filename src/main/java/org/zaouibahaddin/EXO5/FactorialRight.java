@@ -1,6 +1,6 @@
 package org.zaouibahaddin.EXO5;
 
-public class Factorial {
+public class FactorialRight {
     public static int factorial(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("n must be positive");
@@ -12,8 +12,5 @@ public class Factorial {
         return result;
 
     }
-
-
-
 }
 

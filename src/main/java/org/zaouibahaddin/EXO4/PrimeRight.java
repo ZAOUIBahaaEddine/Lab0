@@ -1,6 +1,6 @@
 package org.zaouibahaddin.EXO4;
 
-public class Prime {
+public class PrimeRight {
 
     public static boolean isPrime(int n) {
         if (n < 2) {

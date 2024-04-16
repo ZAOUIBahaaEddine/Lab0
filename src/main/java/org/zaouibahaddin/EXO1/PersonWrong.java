@@ -1,10 +1,10 @@
 package org.zaouibahaddin.EXO1;
 
-public class Person {
+public class PersonWrong {
     private String firstName;
     private String lastName;
     private int age;
-    public Person(String firstName, String lastName, int age) {
+    public PersonWrong(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

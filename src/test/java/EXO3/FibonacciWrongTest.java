@@ -3,15 +3,15 @@ package EXO3;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaddin.EXO3.Fibonacci;
+import org.zaouibahaddin.EXO3.FibonacciWrong;
 
 
-public class FibonacciTest {
-    private Fibonacci Fibo;
+public class FibonacciWrongTest {
+    private FibonacciWrong Fibo;
 
     @BeforeEach
     void setUp (){
-        Fibo = new Fibonacci();
+        Fibo = new FibonacciWrong();
     }
     @Test
     public void FibonacciFornEqualsZeroTest() {

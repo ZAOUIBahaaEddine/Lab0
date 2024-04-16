@@ -5,15 +5,15 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaddin.EXO5.Factorial;
+import org.zaouibahaddin.EXO5.FactorialRight;
 
 
 
-public class FactorialTest {
-    private Factorial fact;
+public class FactorialRightTest {
+    private FactorialRight fact;
     @BeforeEach
     void setUp (){
-        fact = new Factorial();
+        fact = new FactorialRight();
     }
 
 
@@ -66,7 +66,7 @@ public class FactorialTest {
 
     @Test
     public void testFactorialWithNegativeNumber() {
-        assertThrows(IllegalArgumentException.class, () -> Factorial.factorial(-1));
+        assertThrows(IllegalArgumentException.class, () -> FactorialRight.factorial(-1));
     }
 
 }

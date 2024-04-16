@@ -3,16 +3,17 @@ package EXO0_LeayYear;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.zaouibahaddin.EXO0_LeapYear.LeapYear;
+
+import org.zaouibahaddin.EXO0_LeapYear.LeapYearWrong;
 
 
-public class LeapYearTest {
+public class LeapYearWrongTest {
 
-    private LeapYear leapyear;
+    private LeapYearWrong leapyear;
 
     @BeforeEach
     void setUp (){
-        leapyear = new LeapYear();
+        leapyear = new LeapYearWrong();
     }
 
     @Test

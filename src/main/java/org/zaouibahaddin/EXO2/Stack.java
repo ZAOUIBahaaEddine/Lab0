@@ -1,4 +1,4 @@
-package org.zaouibahaddin;
+package org.zaouibahaddin.EXO2;
 
 public class Stack {
     public int[] array;

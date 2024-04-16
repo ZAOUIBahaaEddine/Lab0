@@ -1,4 +1,4 @@
-package org.zaouibahaddin;
+package org.zaouibahaddin.EXO1;
 
 public class Person {
     private String firstName;

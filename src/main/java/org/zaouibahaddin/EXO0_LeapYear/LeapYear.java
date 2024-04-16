@@ -1,4 +1,4 @@
-package org.zaouibahaddin;
+package org.zaouibahaddin.EXO0_LeapYear;
 
 
 public class LeapYear {

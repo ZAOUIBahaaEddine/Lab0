@@ -1,9 +1,10 @@
 package org.zaouibahaddin.EXO2;
 
 public class StackRight {
+    public static final int INITIAL_CAPACITY = 10;
     public int[] array;
     public int top;
-    private static final int INITIAL_CAPACITY = 10;
+
     public StackRight() {
         array = new int[INITIAL_CAPACITY];
         top = -1;
@@ -39,4 +40,9 @@ public class StackRight {
         System.arraycopy(array, 0, newArray, 0, array.length);
         array = newArray;
     }
+
+
+
+
+
 }

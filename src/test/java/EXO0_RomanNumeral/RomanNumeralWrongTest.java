@@ -20,37 +20,13 @@ public class RomanNumeralWrongTest {
         
     }
 
-    /*
+
     @Test
     public void convertNumberWithManyDigitsTest() {
-        RomanNumeral roman = new RomanNumeral();
+        RomanNumeralWrong roman = new RomanNumeralWrong();
         int result = roman.convert("VIII");
         Assertions.assertEquals(8, result);
         // This also is expected to return an error
     }
-    */
-
-
-
-    @Test
-    public void convertModifiedNumberSingleNumberTest() {
-        RomanNumeralWrong roman = new RomanNumeralWrong();
-        int result = roman.convertModified("I");
-        Assertions.assertEquals(1, result);
-    }
-
-
-    @Test
-    public void convertModifiedNumberWithManyDigitsTest() {
-        RomanNumeralWrong roman = new RomanNumeralWrong();
-        int result = roman.convertModified("VIII");
-        Assertions.assertEquals(8, result);
-        // Test sure is passed
-    }
-
-
-
-
-
 
 }

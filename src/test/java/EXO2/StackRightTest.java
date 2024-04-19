@@ -27,12 +27,16 @@ public class StackRightTest {
 
     @Test
     void push_whenStackIsFull_expandsArray() {
-        for (int i = 0; i < stackRight.array.length; i++) {
+        // Fill the stack to its initial capacity
+        for (int i = 0; i < 10; i++) {
             stackRight.push(i);
         }
-        assertEquals(stackRight.array.length * 2, stackRight.top + 1);
-    }
+        // Push one more element, which should trigger array expansion
+        stackRight.push(10);
 
+        // Check that the top index is equal to the new array length - 1
+        assertEquals(stackRight.INITIAL_CAPACITY * 2, stackRight.size());
+    }
 
     @Test
     public void popTest ()

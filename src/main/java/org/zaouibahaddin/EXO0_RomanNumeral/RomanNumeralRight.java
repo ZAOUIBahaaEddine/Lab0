@@ -33,7 +33,6 @@ public class RomanNumeralRight {
             else
                 convertedNumber -= currentNumber;
         }
-
         return convertedNumber;
     }
 }
